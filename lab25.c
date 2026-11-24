@@ -18,7 +18,7 @@ int main() {
     printf("\n");
     printf("Массив,у которого порядковый номер кратен k\n");
     for (int i = k - 1; i < n; i += k) {
-        for (int j = k - 1; j < n - k; j += k) {
+        for (int j = k - 1; j < n ; j += k) {
             if (fabs(arr[j]) > fabs(arr[j + k])) {
                 int sort = arr[j];
                 arr[j] = arr[j + k];
